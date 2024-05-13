@@ -1,0 +1,316 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #303030;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    align-items: center;
+}
+
+.navbar > a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-genres{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #7e7e7e;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: white;
+}
+
+.navbar-genres > a{
+    color: white;
+    text-decoration: none;
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.template-title > p{
+    text-align: center;
+}
+
+.list > a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial;
+    width: 200px;
+}
+
+.livre-template{
+    display: flex;
+    margin-right: 36px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.livre-template > img{
+    border-radius: 10px;
+    width: 119px;
+    height: 162px;
+    transition-property: width, height, border-radius; /* Propriété à animer */
+    transition-duration: 0.5s; /* Durée de l'animation */
+    transition-timing-function: ease; /* Type d'animation */
+}
+
+.livre-template > img:hover{
+    border-radius: 0px;
+    width: 124px;
+    height: 167px;
+}
+
+.connexion-box {
+    background-color: rgb(247, 247, 247);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    width: 400px;
+    height: 650px;
+    margin-top: 15px;
+    align-items: center;
+    flex-direction: column;
+}
+.connexion-box > p, h1 {
+    font-family: 'Arial';
+    color: #303030;
+}
+.connexion-box > p {
+    font-family: 'Arial';
+    color: #303030;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+.connexion-page{
+    display: flex;
+    justify-content: center;
+}
+.connexion-form > input{
+    width: 300px;
+    height: 30px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border: none;
+    background-color: #eeeeee;
+    color: #303030;
+}
+.connexion-form > input[type='submit']{
+    border-radius: 50px;
+    width: 200px;
+    height: 50px;
+    margin-left: 53px;
+    background-color: #303030;
+    color: white;
+}
+.search-book{
+    display: flex;
+    align-items: center;
+}
+.search-book > img{ 
+    margin-left: 5px;
+}
+.log-google{
+    font-family: 'Arial';
+    background-color: #303030;
+    color: white;
+    width: 300px;
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    text-decoration: none;
+}
+.research-livre{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-bottom: 1px black solid;
+    display: flex;
+}
+.results-search > a{
+    color: black;
+    text-decoration: none;
+}
+.research-livre:hover{
+    background-color: #e0e0e0;
+}
+.results-search{
+    position: absolute; /* Position absolue pour le placer où vous le souhaitez */
+    top: 80px; /* Peut être ajusté selon votre disposition */
+    right: 190px; /* Peut être ajusté selon votre disposition */
+    background-color: white;
+    width: 20%;
+    z-index: 9999;
+}
+.last-upload > h2{
+    margin-top: -24px;
+    font-size: 20px;
+    font-style: italic;
+}
+.last-uptdate-date{
+    color: #303030;
+}
+.see-more{
+    display: flex;
+    font-family: Arial;
+}
+.see-more > a{
+    margin-top: 67px;
+    text-decoration: none;
+    color: #303030;
+}
+.no-last-updates > p{
+    text-decoration: none;
+    color: black;
+    font-family: Arial;
+    font-family: Arial;
+}
+.no-in-progress > p{
+    text-decoration: none;
+    color: black;
+    font-family: Arial;
+    font-family: Arial;
+}
+.all-genre-selected{
+    margin-top: 20px;
+}
+.navbar-genres-phone, .logo-navabar-phone, .signup-phone{
+    display: none;
+}
+
+.search-book-phone{
+    display: none;
+}
+
+.content-profil{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.separater{ 
+    border-left: solid 2px rgb(26, 26, 26);
+    height: 2000px;
+}
+
+.info-du-compte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile-settings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 100px) and (max-width: 500px) {
+    .navbar{
+        width: 100%;
+        height: 10px;
+    }
+    .logo-navabar{
+        display: none;
+    }
+    .navbar-genres{
+        display: none;
+    }
+    .best-marks{
+        position: relative;
+    }
+    .livre-template{
+        flex-direction: row;
+        margin-bottom: 5px;
+    }
+    .template-title > p{
+        margin-left: 10px;
+    }
+    .list > a{
+        width: 400px;
+    }
+    .in-progress{
+        margin-top: 0px;
+    }
+    .text-box-search{
+        display: none;
+    }
+    .home-navbar{
+        display: none;
+    }
+    .signup{
+        display: none;
+    }
+    .search-book{
+        display: none;
+    }
+    .search-book-form{
+        display: none;
+    }
+    .navbar-genres-phone{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: #7e7e7e;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        color: white;
+    }
+    .navbar-genres-phone > a{
+        color: white;
+        text-decoration: none;
+    }
+    .logo-navabar-phone, .signup-phone{
+        display: block;
+    }
+    .navbar{
+        justify-content: space-between;
+    }
+    .search-book-phone{
+        display: flex;
+        align-items: center;
+    }
+    .text-box-search-phone{
+        width: 100%;
+    }
+    .search-book-phone > img{ 
+        margin-left: 5px;
+    }   
+    .see-more{
+        margin-top: -50px;
+    }
+    .navbar-genres-phone{
+        font-size: 13px;
+    }
+    .content-profil{
+        display: block;
+    }
+    .add-book-section{ 
+        border-top: solid 2px rgb(26, 26, 26);
+    }
+    .info-du-compte{
+        margin-bottom: 20px;
+    }
+    
+    
+}
+.no-account > p, a{
+    font-family: 'Arial';
+}
+
+.no-account{
+    display: flex;
+    align-items: baseline;
+}
+
+.no-account > a{
+    color: #303030;
+    margin-left: 3px;
+}
